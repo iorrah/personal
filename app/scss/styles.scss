@@ -1,0 +1,12 @@
+@import 'variables/general';
+@import 'variables/colors';
+@import 'variables/fonts';
+@import '../../bower_components/bootstrap/scss/mixins/breakpoints';
+@import 'mixins/browser-support';
+@import 'mixins/typedjs';
+@import 'general';
+@import 'skins/indigo';
+@import 'navbar';
+@import 'jumbotron';
+@import 'typedjs';
+@import 'footer';

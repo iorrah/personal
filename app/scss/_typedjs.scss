@@ -1,0 +1,25 @@
+.typed-cursor {
+  @include animation(blink .7s infinite);
+  font-weight: 100;
+  opacity: 1;
+}
+
+@keyframes blink {
+  @include blink-keyframe();
+}
+
+@-webkit-keyframes blink {
+  @include blink-keyframe();
+}
+
+@-moz-keyframes blink {
+  @include blink-keyframe();
+}
+
+@-ms-keyframes blink {
+  @include blink-keyframe();
+}
+
+@-o-keyframes blink {
+  @include blink-keyframe();
+}

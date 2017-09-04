@@ -1,0 +1,23 @@
+.navbar.affix {
+  background-color: $curious-blue;
+}
+
+header {
+  background: linear-gradient(40deg, $dodger-blue, $san-marino);
+}
+
+.footer.page-footer {
+  background-color: $curious-blue;
+
+  .icons-container .fa-inverse {
+    color: $curious-blue;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .footer.page-footer {
+    .icons-container .fa-inverse {
+      color: $white;
+    }
+  }
+}

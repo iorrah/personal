@@ -1,0 +1,23 @@
+.navbar.affix {
+  background-color: $ebony-clay;
+}
+
+header {
+  background: linear-gradient(40deg, $black-russian, $san-noon);
+}
+
+.footer.page-footer {
+  background-color: $ebony-clay;
+
+  .icons-container .fa-inverse {
+    color: $ebony-clay;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .footer.page-footer {
+    .icons-container .fa-inverse {
+      color: $white;
+    }
+  }
+}

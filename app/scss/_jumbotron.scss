@@ -1,0 +1,90 @@
+.jumbotron-container {
+  padding: 5rem 0 6rem;
+}
+
+.jumbotron {
+  background-color: $white;
+  margin: 0 auto;
+  max-width: 42rem;
+
+  .img-rounded {
+    border-radius: 100%;
+    width: 10rem;
+  }
+
+  section {
+    margin: 0 0 2rem;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &.titles {
+      margin: 0 0 1.5rem;
+
+      h1 {
+        font-size: 1.7rem;
+        font-weight: 300;
+        margin: 1.75rem 0 .75rem;
+        text-align: center;
+        text-transform: none;
+      }
+
+      a {
+        display: none;
+        font-weight: 300;
+      }
+    }
+
+    h1 {
+      font-size: 1.2rem;
+      font-weight: 300;
+      text-align: left;
+      text-transform: none;
+    }
+
+    a {
+      &,
+      &:hover,
+      &:not([href]):not([tabindex]) {
+        color: $aquamarine;
+      }
+    }
+  }
+
+  p {
+    font-weight: 300;
+    margin-bottom: .5rem;
+    max-width: 50rem;
+    text-align: justify;
+  }
+
+  ul {
+    margin: 0 0 .5rem;
+
+    li {
+      font-weight: 300;
+      text-align: justify;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .jumbotron {
+    section.titles {
+
+      h1 {
+        line-height: 1.2rem;
+        margin: 1rem 0 0;
+      }
+    }
+
+    section.titles a {
+      display: inline;
+      font-size: .8rem;
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+    }
+  }
+}
